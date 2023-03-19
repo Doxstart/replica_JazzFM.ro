@@ -1,59 +1,98 @@
 html body{
     margin: 0;
-    
     padding: 0;
-    
 }
+
 header{
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 100;
+    height: 100;
+    padding-right: 0;
+    padding-left: 20px;
+    margin: 0;
     display: flex;
     background-color: #facb00;
-    min-height: 100vw;
-    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
-.logo-radio{
 
+.logo-radio{
+    width: 15vw;
+    position: absolute;
+    border: 0px solid red;
+    padding-top: 20px;
+    margin: 0;
+    order: -2;
 }
+
 .radio-play{
     display: flex;
-    justify-content: right;
-    align-items: right;
-}
-/*
-{
-    box-sizing: inherit;
+    align-self: flex-end;
+    border: 0px solid green;
+    padding-right: 20px;
+    padding-left: 0;
+    margin: 0;
+    width: 100vh;
+    height: 45vw;
 }
 
-.footer-container{
-    display: grid;
-    height: 100vw;
-    width: 100vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "E1 E1 E1 E1 E2 E2 E2 E2"
-    "E1 M M E1 E2 A A E2"
-    "E1 M M E1 E2 A A E2"
-    "E1 E1 E1 E1 E2 E2 E2 E2";
+.now-playing{
+    align-self: flex-end;
+    order: -1;
+    position: relative;
+    left: 0vw;
+    bottom: 20vh;
+    font-size: 1vw;
 }
-.mouth{
-    grid-area: M;
-    background-color: #660099;
-}
-.arrow{
-    grid-area: A;
-    background-color: #ff3333;
-}
-.bg-purp{
-    grid-area: E1;
-    background-color: #660099;
-}
-.bg-red{
-    grid-area: E2;
-    background-color: #ff3333;
-}*/
 
-/*.footer-container{
+.brano{
+    align-self: flex-end;
+    order: -1;
+    position: relative;
+    right: 14vw;
+    bottom: 11vh;
+    font-size: 2vw;
+}
+
+.autore{
+    align-self: flex-end;
+    order: -1;
+    position: relative;
+    right: 35vw;
+    bottom: 6vh;
+    font-size: 1.5vw;
+}
+
+footer{
+    box-sizing: border-box;
+    width: 100;
+    height: 100;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}*/
+    justify-content: space-around;
+}
+
+.mouth{
+    background-color: #660099;
+    width: 18vw;
+    height: 100vh;
+    /* border: #660099 solid 198px;
+    border-top: 100vw;
+    border-bottom: 100vh; */
+    flex-grow: 1;
+}
+
+.arrow{
+    background-color: #ff3333;
+    width: 23vw;
+    height: 100vh;
+    /* border: #ff3333 solid 198px;
+    border-top: 100vw;
+    border-bottom: 100vh; */
+    flex-grow: 1;
+}
