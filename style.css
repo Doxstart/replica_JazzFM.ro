@@ -22,6 +22,8 @@ header{
 
 .logo-radio{
     width: 15vw;
+    max-width: 100vw;
+    max-height: 100vh;
     position: absolute;
     border: 0px solid red;
     padding-top: 20px;
@@ -37,7 +39,8 @@ header{
     padding-left: 0;
     margin: 0;
     width: 100vh;
-    height: 45vw;
+    height: 50vw;
+    object-fit: contain;
 }
 
 .now-playing{
@@ -45,15 +48,15 @@ header{
     order: -1;
     position: relative;
     left: 0vw;
-    bottom: 20vh;
-    font-size: 1vw;
+    bottom: 18vh;
+    font-size: 0.7vw;
 }
 
 .brano{
     align-self: flex-end;
     order: -1;
     position: relative;
-    right: 14vw;
+    right: 12vw;
     bottom: 11vh;
     font-size: 2vw;
 }
@@ -62,8 +65,8 @@ header{
     align-self: flex-end;
     order: -1;
     position: relative;
-    right: 35vw;
-    bottom: 6vh;
+    right: 33vw;
+    bottom: 8vh;
     font-size: 1.5vw;
 }
 
@@ -85,14 +88,16 @@ footer{
     border-top: 100vw;
     border-bottom: 100vh; */
     flex-grow: 1;
+    object-fit: scale-down;
 }
 
 .arrow{
     background-color: #ff3333;
-    width: 23vw;
+    width: 20vw;
     height: 100vh;
     /* border: #ff3333 solid 198px;
     border-top: 100vw;
     border-bottom: 100vh; */
     flex-grow: 1;
+    object-fit: scale-down;
 }
